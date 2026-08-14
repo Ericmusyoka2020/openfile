@@ -1,8 +1,10 @@
-
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>View Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Documents</title>
+
   <style>
     body {
       margin: 0;
@@ -10,38 +12,64 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      font-family: Arial, sans-serif;
       background: linear-gradient(135deg, #6a11cb, #2575fc);
-      font-family: Arial;
-    }
-
-    .box {
+      color: white;
       text-align: center;
     }
 
+    .box {
+      padding: 30px;
+    }
+
+    h1 {
+      margin-bottom: 10px;
+    }
+
+    p {
+      margin-bottom: 25px;
+    }
+
     button {
-      padding: 15px 30px;
-      font-size: 18px;
+      display: block;
+      width: 220px;
+      margin: 12px auto;
+      padding: 15px;
       border: none;
       border-radius: 12px;
       background: white;
       color: #2575fc;
+      font-size: 17px;
+      font-weight: bold;
       cursor: pointer;
     }
 
+    button:hover {
+      transform: scale(1.05);
+    }
+
     .hand {
-      display: block;
-      margin-top: 8px;
       font-size: 25px;
+      margin-top: 15px;
     }
   </style>
 </head>
+
 <body>
 
   <div class="box">
-    <button onclick="window.open('pic.png', '_blank')">
-      View Document
+    <h1>📄 View Documents</h1>
+    <p>Choose a document to open</p>
+
+    <button onclick="window.open('CV.pdf', '_blank')">
+      📄 Open CV
     </button>
-    <span class="hand">👆</span>
+
+    <button onclick="window.open('pic.png', '_blank')">
+      🎓 Open Certificates
+    </button>
+
+    <div class="hand">👇</div>
   </div>
 
 </body>
